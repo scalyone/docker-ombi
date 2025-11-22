@@ -41,4 +41,4 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 3579
+EXPOSE 80
