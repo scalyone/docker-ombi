@@ -6,5 +6,5 @@ if [[ -n "${BASE_URL}" ]]; then
 fi
 
 exec \
-    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z 127.0.0.1 3579" \
-        cd /app/ombi s6-setuidgid abc /app/ombi/Ombi --storage "/config" --host http://*:3579 ${EXTRA_PARAM}
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z 127.0.0.1 80" \
+        cd /app/ombi s6-setuidgid abc /app/ombi/Ombi --storage "/config" --host http://*:80 ${EXTRA_PARAM}
